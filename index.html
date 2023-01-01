@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Developers Food</title>
+  </head>
+  <body class="text-gray-600">
+    <!-- content wrapper -->
+    <div class="grid md:grid-cols-4">
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="mx-6 flex items-center justify-between">
+            <h1 class="font-bold uppercase p-4">
+              <a href="/" class="hover:text-gray-500">Developers Food </a>
+            </h1>
+            <div id="burger" class="md:hidden">
+              <div class="bg-black w-6 h-1 m-1"></div>
+              <div class="bg-black w-6 h-1 m-1"></div>
+              <div class="bg-black w-6 h-1 m-1"></div>
+            </div>
+          </div>
+          <ul
+            id="menu"
+            class="text-sm mt-6 space-y-1 hidden md:block transition-all ease-in duration-500"
+          >
+            <li id="under" class="text-gray-700 font-bold">
+              <a href="#"
+                ><span class="text-gray-700 px-4 border-r-4 border-pink-500"
+                  >Home</span
+                ></a
+              >
+              <ul id="under1" class="hidden px-4 text-gray-500 font-thin">
+                <li>This is</li>
+                <li>multi layer</li>
+                <li>Responsive Navbar</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="px-4 border-r-4 border-transparent"
+                ><span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="px-4 border-r-4 border-transparent"
+                ><span>Contacts</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end nav -->
+
+      <main class="px-16 py-6 bg-gray-100 md:col-span-3">
+        <div class="flex justify-center md:justify-end space-x-2">
+          <a
+            href="#"
+            class="text-pink-500 md:border border-pink-500 hover:bg-pink-500 hover:text-white transition-all ease-out duration-500 rounded-full py-2 px-3 uppercase text-xs tracking-wider"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="text-pink-500 md:border border-pink-500 hover:bg-pink-500 hover:text-white transition-all ease-out duration-500 rounded-full py-2 px-3 uppercase text-xs cursor-pointer tracking-wider"
+            >Sign up</a
+          >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl text-gray-600 my-4 font-semibold">
+            For Developers
+          </h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-14 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+
+          <div class="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- cards goes here -->
+            <div
+              class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg cursor-pointer relative"
+            >
+              <img
+                src="./images/paneer.jpg"
+                class="w-full h-32 sm:h-60 object-cover transition-all duration-500 hover:scale-105"
+                alt="5 Bean Chilli Stew"
+              />
+              <div class="m-4">
+                <span class="font-bold">Paneer Tikka Masala</span>
+                <span class="block text-gray-500 text-sm"
+                  >Recipe by Sanjeev</span
+                >
+              </div>
+              <div
+                class="bg-lime-100 text-gray-700 text-xs font-bold uppercase rounded-full absolute p-2 top-0 m-2"
+              >
+                <span>21 mins</span>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg cursor-pointer relative"
+            >
+              <img
+                src="./images/noodles.jpg"
+                class="w-full h-32 sm:h-60 object-cover transition-all duration-500 hover:scale-105"
+                alt="Veg Noodles"
+              />
+              <div class="m-4">
+                <span class="font-bold">Veg Noodles</span>
+                <span class="block text-gray-500 text-sm">Recipe by barar</span>
+              </div>
+              <div
+                class="bg-lime-100 text-gray-700 text-xs font-bold uppercase rounded-full absolute p-2 top-0 m-2"
+              >
+                <span>16 mins</span>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg cursor-pointer relative"
+            >
+              <img
+                src="./images/stew.jpg"
+                class="w-full h-32 sm:h-60 object-cover transition-all duration-500 hover:scale-105"
+                alt="Tofu Curry"
+              />
+              <div class="m-4">
+                <span class="font-bold">Stew</span>
+                <span class="block text-gray-500 text-sm">Recipe by Rahul</span>
+              </div>
+              <div
+                class="bg-lime-100 text-gray-700 text-xs font-bold uppercase rounded-full absolute p-2 top-0 m-2"
+              >
+                <span>20 mins</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-14 pb-2 border-b border-gray-200">
+            Most Popular
+          </h4>
+          <div class="mt-8">
+            <!-- cards goes here -->
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="bg-gray-600 text-white border hover:border-gray-600 hover:bg-white hover:text-gray-600 transition-all ease-out duration-500 hover:scale-110 rounded-full py-2 px-3 uppercase text-xs cursor-pointer tracking-wider"
+            >
+              Load more
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
